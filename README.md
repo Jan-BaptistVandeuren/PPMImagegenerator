@@ -12,7 +12,7 @@ build\Release\PPMImagegenerator.exe > output\image.ppm
 ```
 You use this with the following command on mac and Linux (untested but should work)
 ```plaintext
-build/PPMImagegenerator.exe > output\image.ppm
+build/Release/PPMImagegenerator.exe > output\image.ppm
 ```
 
 
