@@ -1,7 +1,7 @@
 # PPMImagegenerator
 Generates a PPM image
 
-You use this with the following command \```build\Release\PPMImagegenerator.exe > output\image.ppm```\
+You use this with the following command ```build\Release\PPMImagegenerator.exe > output\image.ppm```
 
 ## PPM File Structure (AI Generated Explanation)
 
@@ -19,12 +19,12 @@ You use this with the following command \```build\Release\PPMImagegenerator.exe 
 
 Here's an example of what a small `P3` PPM file might look like:
 
-\```plaintext
+```plaintext
 P3
 3 2
 255
 255 0 0   0 255 0   0 0 255
 255 255 0 255 255 255 0 0 0
-\```
+```
 
 This represents a `3x2` pixel image. The first row of pixels is red, green, and blue. The second row is yellow, white, and black. 
