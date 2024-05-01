@@ -41,6 +41,6 @@ P3
 255 0 0   0 255 0   0 0 255
 255 255 0 255 255 255 0 0 0
 ```
-![giving this](https://en.wikipedia.org/wiki/File:Tiny6pixel.png)
+![giving this](https://upload.wikimedia.org/wikipedia/commons/5/57/Tiny6pixel.png)
 
 This represents a `3x2` pixel image. The first row of pixels is red, green, and blue. The second row is yellow, white, and black. 
