@@ -38,6 +38,7 @@ int main() {
 
     std::ofstream file(filename.str());
     
+    //starts population the file
     file << "P3\n" << config.width << " " << config.height << "\n255\n";
 
     for (int j = 0; j < image_height; j++) {

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
-project(PPMImageGenerator)
+project(PPMImagegenerator)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(PPMImageGenerator src/main.cpp)
+add_executable(PPMImagegenerator src/main.cpp)
