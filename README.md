@@ -8,12 +8,14 @@ cmake --build build --config release
 
 You use this executable with the following command on windows
 ```plaintext
-build\Release\PPMImagegenerator.exe > output\image.ppm
+build\Release\PPMImagegenerator.exe
 ```
 You use this with the following command on mac and Linux (untested but should work)
 ```plaintext
-build/Release/PPMImagegenerator.exe > output\image.ppm
+build/Release/PPMImagegenerator
 ```
+
+It will create a file in the output folder with the given runtime parameters.
 
 
 ## PPM File Structure (AI Generated Explanation)
@@ -28,7 +30,7 @@ build/Release/PPMImagegenerator.exe > output\image.ppm
     - The third line contains a single integer, representing the maximum color value. This is typically `255` for an 8-bit per channel image.
 
 4. **Pixel Data**
-    - The rest of the file contains the pixel data. Each pixel is represented by three integers (for red, green, and blue channels), each in the range of `0` to the maximum color value. In a `P3` (ASCII) file, these values are in plain text and separated by whitespace. In a `P6` (binary) file, these values are stored as binary data. Here we will be using P3.
+    - The rest of the file contains the pixel data. Each pixel is represented by three integers (for red, green, and blue channels), each in the range of `0` to the maximum color value. In a `P3` (ASCII) file, these values are in plain text and separated by whitespace. In a `P6` (binary) file, these values are stored as binary data. Here we will be using `P3`.
 
 Here's an example of what a small `P3` PPM file might look like:
 
