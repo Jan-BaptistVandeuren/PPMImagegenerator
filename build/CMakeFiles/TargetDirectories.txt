@@ -1,0 +1,3 @@
+C:/Github/PPMImagegenerator/build/CMakeFiles/PPMImagegenerator.dir
+C:/Github/PPMImagegenerator/build/CMakeFiles/ALL_BUILD.dir
+C:/Github/PPMImagegenerator/build/CMakeFiles/ZERO_CHECK.dir

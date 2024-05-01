@@ -3,11 +3,11 @@
 #include <sstream>
 
 struct Config {
-    int width;
-    int height;
-    bool hasRed;
-    bool hasGreen;
-    bool hasBlue;
+    int width = 0;
+    int height = 0;
+    bool hasRed = false;
+    bool hasGreen = false;
+    bool hasBlue = false;
 };
 
 int main() {
@@ -30,22 +30,22 @@ int main() {
 
     //creates a file with said parameters and stores it in the output directory
     std::ostringstream filename;
-    filename << "../output/" << config.width << "_" << config.height << "_"
+    filename << "../../output/" << config.width << "_" << config.height << "_"
              << (config.hasRed ? "1" : "0")
              << (config.hasGreen ? "1" : "0")
              << (config.hasBlue ? "1" : "0")
              << ".ppm";
-
+    std::cout << filename.str();
     std::ofstream file(filename.str());
     
     //starts population the file
     file << "P3\n" << config.width << " " << config.height << "\n255\n";
 
-    for (int j = 0; j < image_height; j++) {
-        for (int i = 0; i < image_width; i++) {
-            auto r = hasRed ? double(i) / (image_width-1) : 0.0;
-            auto g = hasGreen ? double(j) / (image_height-1) : 0.0;
-            auto b = hasBlue ? double (i + j) / (image_width + image_height - 2): 0.0;
+    for (int j = 0; j < config.width; j++) {
+        for (int i = 0; i < config.height; i++) {
+            auto r = config.hasRed ? double(i) / (config.width - 1) : 0.0;
+            auto g = config.hasGreen ? double(j) / (config.height - 1) : 0.0;
+            auto b = config.hasBlue ? double (i + j) / (config.width + config.height - 2): 0.0;
 
             int ir = int(255.999 * r);
             int ig = int(255.999 * g);
@@ -54,6 +54,7 @@ int main() {
             file << ir << ' ' << ig << ' ' << ib << '\n';
         }
     }
+    std::cout << "Done\n";
 
     return 0;
 }

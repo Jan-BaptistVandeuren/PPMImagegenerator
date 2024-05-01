@@ -1,0 +1,10 @@
+^C:\GITHUB\PPMIMAGEGENERATOR\BUILD\CMAKEFILES\55093ECB3113FEAFC9B06FAF620F7A4A\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Github/PPMImagegenerator -BC:/Github/PPMImagegenerator/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Github/PPMImagegenerator/build/PPMImagegenerator.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
