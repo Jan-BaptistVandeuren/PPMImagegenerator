@@ -5,6 +5,10 @@ You can build the program with cmake
 ```plaintext
 cmake --build build --config release
 ```
+If you get **Error: could not load cache** run this before rerunning the code above
+```plaintext
+cmake -S . -B .\build
+```
 
 You use this executable with the following command on windows
 ```plaintext
